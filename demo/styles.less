@@ -1,0 +1,40 @@
+@mainWidth: 400px;
+@mainHeight: 150px;
+@mainBackground: #EBEBEB;
+@authorColor: #00ACEE;
+@urlColor: #FF6400;
+@fontSize: 16px;
+@lineHeight: 18px;
+@fontFamily: 'Times New Roman';
+
+[data-id='testimonialsRotator'] {
+  width: @mainWidth;
+  height: @mainHeight;
+  padding: 10px;
+  list-style: none;
+  font: @fontSize / @lineHeight @fontFamily;
+  background: @mainBackground;
+  border-radius: 12px;
+  & > li {
+    display: none;
+    & > p {
+      color: @authorColor;
+      font-style: italic;
+      text-align: right;
+      margin: 10px;
+      & > a,
+      & > a:hover,
+      & > a:visited {
+        color: @urlColor;
+      }
+    }
+    & > blockquote {
+      background: url("quote.png") 0 0 no-repeat;
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      padding: 10px 0 10px 50px;
+      height: 100px;
+      overflow: hidden;
+    }
+  }
+}

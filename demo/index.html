@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title></title>
+    <link href="styles.css" rel="stylesheet"/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            width: 600px;
+            margin: 50px auto;
+            background: #B2B2B2;
+        }
+    </style>
+</head>
+<body>
+
+<ul id="testimonials">
+    <li>
+        <blockquote>This has to be the most awesome app I've ever used!</blockquote>
+        <p>John Doe, <a href="#">johndoe.com</a></p>
+    </li>
+    <li>
+        <blockquote>Simply amazing! It solved my problem. I highly recommend it.</blockquote>
+        <p>John Smith, <a href="#">johnsmith.com</a></p>
+    </li>
+    <li>
+        <blockquote>A tremendous success. It is like walking on sunshine compared to its competitors.</blockquote>
+        <p>Ben Cooper Smith, <a href="#">bencooper.com</a></p>
+    </li>
+</ul>
+
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="../jquery.rotator.min.js"></script>
+<script>
+    $("#testimonials").rotator({
+        delay: 1000
+    });
+</script>
+</body>
+</html>
