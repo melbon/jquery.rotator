@@ -27,7 +27,7 @@ default: "slow"
 options: "slow" / "fast" or number
 ```
 ## Demo
-<a href="http://codepen.io/mel/full/uAlIn" target="_blank">codepen.io/mel/full/uAlIn</a>
+<a href="http://codepen.io/mel/full/sbtLl" target="_blank">codepen.io/mel/full/sbtLl</a>
 ## License
 @author Mario Vidov <br />
 @url <a href="http://vidov.it" target="_blank">www.vidov.it</a> <br />
