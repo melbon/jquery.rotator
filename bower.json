@@ -1,0 +1,21 @@
+{
+  "name": "jquery.rotator",
+  "main": "jquery.rotator.js",
+  "version": "2.0.0",
+  "homepage": "https://github.com/melbon/jquery.rotator",
+  "authors": [
+    "melbon <mario@vidov.it>"
+  ],
+  "description": "Testimonials Rotator",
+  "keywords": [
+    "testimonials"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
