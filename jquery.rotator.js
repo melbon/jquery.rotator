@@ -1,6 +1,6 @@
 /*
  * February 2013
- * rotator 2.0.0
+ * rotator 2.1.0
  * @author Mario Vidov
  * @url http://vidov.it
  * @twitter MarioVidov
@@ -13,18 +13,19 @@ $.fn.rotator = function(options) {
         fadeSpeed: "slow"
     }, options);
 
-    var self = this,
-        selector = this.selector,
-        elements = $(selector).children();
+    return this.each(function() {
+        var self = this,
+            selector = $(this),
+            elements = $(selector).children();
 
-    $(elements).hide().eq(Math.floor(Math.random() * $(elements).length)).show();
-    $(selector).attr("data-id", "testimonialsRotator");
+        $(elements).hide().eq(Math.floor(Math.random() * $(elements).length)).show();
 
-    this.rotateElements = function() {
-        $(selector).children(":visible").delay(settings.delay).fadeOut(settings.fadeSpeed, function() {
-            $(this).appendTo(selector);
-            $(selector).children(":first").fadeIn(settings.fadeSpeed, self.rotateElements);
-        });
-    }
-    self.rotateElements();
-}
+        this.rotateElements = function() {
+            $(selector).children(":visible").delay(settings.delay).fadeOut(settings.fadeSpeed, function() {
+                $(this).appendTo(selector);
+                $(selector).children(":first").fadeIn(settings.fadeSpeed, self.rotateElements);
+            });
+        };
+        self.rotateElements();
+    });
+};
