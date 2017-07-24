@@ -14,13 +14,13 @@ bower install rotator
 $(":input").rotator();
 ```
 ## Configuration
-#####delay
+##### delay
 time next element wait before stating
 ```javascript
 default: 5000
 options: number
 ```
-#####fadeSpeed
+##### fadeSpeed
 fade transition duration
 ```javascript
 default: "slow"
